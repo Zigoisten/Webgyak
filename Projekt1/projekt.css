@@ -1,0 +1,117 @@
+
+.fcontainer1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.fcontainer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+
+header {
+    text-align: center;
+}
+
+.box {
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(wheat, gray);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 20px;
+    margin: 10px;
+
+}
+
+.container {
+    margin: 30px;
+    background: rgba(255, 255, 255, 0.4);
+    transition: 0.3s;
+}
+
+body {
+    background-image: url("workout1.jpg");
+    background-size: cover;
+}
+
+.fej {
+    height: 50px;
+    background: wheat;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 20px;
+    margin: 10px;
+    font-style: oblique;
+}
+
+@media (max-width: 800px) {
+    .fcontainer1, .fcontainer2 {
+        flex-direction: column;
+    }
+}
+
+label {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    display: block;
+    background-color: #ebebeb;
+    border-radius: 100px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+label::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+    border-radius: 40px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+input:checked + label {
+    background: #242424;
+}
+
+input:checked + label:after {
+    left: 97px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, #777, #3a3a3a);
+
+}
+
+.dark {
+    .container {
+        background: rgba(0, 0, 0, 0.4);
+    }
+    .box {
+        background: linear-gradient(black, darkred);
+        transition: 0.3s;
+    }
+    .fej {
+        background: #242424;
+        color: white;
+    }
+}
