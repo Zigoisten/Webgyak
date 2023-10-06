@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edzésterv</title>
+    <link rel="stylesheet" href="projekt.css">
+</head>
+<body>
+    <header>
+        <h1 class="fej">Edzésterv - Táborosi Máté Kristóf</h1>
+    </header>
+    <div class="container" id="trans">
+        <div class="fcontainer1">
+            <div class="hetfo">
+                <h1 class="fej">Hétfő</h1>
+                <div class="box">15:00 - Calisthenics</div>
+                <div class="box">16:00 - Triset</div>
+                <div class="box">17:00 - Hasizom</div>
+                <div class="box">18:00 - Futás</div>
+            </div>
+            <div class="kedd">
+                <h1 class="fej">Kedd</h1>
+                <div class="box">15:00 - Altest</div>
+                <div class="box">16:00 - Súlyemelés</div>
+                <div class="box">17:00 - HIIT</div>
+                <div class="box"> - </div>
+            </div>
+            <div class="szerda">
+                <h1 class="fej">Szerda</h1>
+                <div class="box">15:00 - Futás</div>
+                <div class="box">16:00 - Futás </div>
+                <div class="box">17:00 - Súlyemelés </div>
+                <div class="box"> - </div>
+            </div>
+            <div class="csutortok">
+                <h1 class="fej">Csütörtök</h1>
+                <div class="box">15:00 - Felsőtest</div>
+                <div class="box">16:00 - Hátizom</div>
+                <div class="box">17:00 - HIIT</div>
+                <div class="box"> - </div>
+            </div>
+            <div class="pentek">
+                <h1 class="fej">Péntek</h1>
+                <div class="box">15:00 - Calisthenics</div>
+                <div class="box">16:00 - Triset</div>
+                <div class="box">17:00 - Hasizom</div>
+                <div class="box">18:00 - Futás</div>
+            </div>
+        </div>
+        <div class="fcontainer2">
+            <div class="szombat">
+                <h1 class="fej">Szombat</h1>
+                <div class="box">15:00 - Testkontroll</div>
+                <div class="box"> - </div>
+                <div class="box"> - </div>
+                <div class="box">18:00 - Bicepsz</div>
+            </div>
+            <div class="vasarnap">
+                <h1 class="fej">Vasárnap</h1>
+                <div class="box">PIHENŐNAP</div>
+                <div class="box">PIHENŐNAP</div>
+                <div class="box">PIHENŐNAP</div>
+                <div class="box">PIHENŐNAP</div>
+            </div>
+        </div>
+    </div>
+    <input type="checkbox" id="darkmode" onclick="darkMode()"/>
+    <label for="darkmode"></lable>
+    <script>
+        function darkMode() {
+            let element = document.body;
+            element.classList.toggle("dark");
+        }
+    </script>
+</body>
+</html>
