@@ -1,0 +1,29 @@
+.container {
+    background-color: aquamarine;
+    display: flex;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.tarolo {
+    width: 40%;
+    height: 40%;
+    align-items: center;
+}
+
+#elso {
+    background-color: blue;
+}
+
+#masodik {
+    background-color: brown;
+}
+
+#harmadik {
+    background-color: chartreuse;
+}
