@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    
+}
+
+
+#purple{
+    background-color: purple;
+    width: 100%;
+    height: 50px;
+
+}
+
+#yellow{
+    background-color: yellow;
+    width: 90%;
+    height: 150%;
+
+}
+
+#green{
+    background-color: green;
+    width: 40%;
+    height: 150%;
+
+}
+
+#cyan{
+    background-color: cyan;
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+
+}
+
+body{
+    background-color: aliceblue;
+}
