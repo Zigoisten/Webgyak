@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.grid-2x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.grid-2x2 div {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
