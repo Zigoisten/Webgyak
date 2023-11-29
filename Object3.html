@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizetések Összege</title>
+</head>
+<body>
+    <script>
+        let fizetes = {
+            Anna: 2100,
+            Cecil: 1890,
+            Emil: 2050,
+            Gerald: 2920
+        };
+
+        let osszeg = 0;
+        for (let szemely in fizetes) {
+            osszeg += fizetes[szemely];
+            console.log(`${szemely} fizetése: ${fizetes[szemely]} Ft`);
+        }
+        
+        document.body.innerHTML = `<p>Az összes fizetés: ${osszeg} Ft</p>`;
+    </script>
+</body>
+</html>
