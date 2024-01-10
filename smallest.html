@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legkisebb Érték</title>
+</head>
+<body>
+
+<script>
+    function findMin(arr, mode) {
+        if (mode === 'value') {
+            return Math.min(...arr);
+        } else if (mode === 'index') {
+            return arr.indexOf(Math.min(...arr));
+        } else {
+            return null; 
+        }
+    }
+
+    let arr = [1, 2, 3, 4, 5];
+    let resultValue = findMin(arr, 'value');
+    let resultIndex = findMin(arr, 'index');
+
+    document.write(`<p>Lista: [${arr.join(', ')}]</p>`);
+    document.write(`<p>Legkisebb Érték: ${resultValue}</p>`);
+    document.write(`<p>A minimum érték helye: ${resultIndex}</p>`);
+</script>
+
+</body>
+</html>

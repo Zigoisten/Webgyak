@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Páratlan szám összege</title>
+</head>
+<body>
+
+<script>
+    function sumCubedOddNumbers(arr) {
+        let sum = 0;
+
+        for (let value of arr) {
+            if (typeof value !== 'number' || typeof value === 'boolean') {
+                return undefined;
+            }
+
+            if (value % 2 !== 0) {
+                sum += Math.pow(value, 3);
+            }
+        }
+
+        return sum;
+    }
+
+    let exampleArray = [1, 2, 3, true, 5]; 
+    let result = sumCubedOddNumbers(exampleArray);
+
+    let exampleArray2 = [4, 2, 5, 9, 3]; 
+    let result2 = sumCubedOddNumbers(exampleArray2);
+
+    document.write(`<p>Lista 1: [${exampleArray.join(', ')}]</p>`);
+    document.write(`<p>A Páratlan számok összege a listából: ${result}</p>`);
+
+    document.write(`<p>Lista 2: [${exampleArray2.join(', ')}]</p>`);
+    document.write(`<p>A Páratlan számok összege a listából: ${result2}</p>`);
+</script>
+
+</body>
+</html>
