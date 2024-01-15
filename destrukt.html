@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1. Feladat
+        let car = ['Ford', 'Mustang', 2022, 'blue'];
+        let [brand, model, year, color] = [...car]
+        console.log(brand);
+        console.log(model);
+        console.log(year);
+        console.log(color);
+        //Válasz: Mindegy hogy mit adunk meg változónévnek, a változók sorrendje a fontos, a tömbben lévő elemekhez igazodva
+        //2. Feladat
+        let book = {
+        bookTitle: 'JavaScript: The Good Parts',
+        bookAuthor: 'Douglas Cockford',
+        publicationYear: 2008,
+        language: 'English'
+        };
+        let {bookTitle, bookAuthor, publicationYear, language} = book;
+        console.log(bookTitle);
+        console.log(bookAuthor);
+        console.log(publicationYear);
+        console.log(language);
+        //3. Feladat
+        //Válasz: Változónak az objektumban meghatározott kulcsot kell megadni, máskülönben nem veszi fel az értéket. A változók sorrendjétől független.
+        let student = {
+        name: 'John Doe',
+        age: 20,
+        grade: 'B',
+        subjects: ['Math', 'English', 'History']
+        };
+        function printStudentInfo({name, age, grade, subjects}) {
+            console.log(`A diák neve: ${name}, életkora: ${age}, osztályzata: ${grade}, tantárgyai: ${subjects}`)
+        }
+        printStudentInfo(student);
+        //
+    </script>
+</body>
+</html>
