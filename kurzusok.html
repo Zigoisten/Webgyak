@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kurzusok</title>
+  <link rel="stylesheet" href="kurzusok.css">
+</head>
+<body>
+  <h1>Kurzusok</h1>
+
+  <div id="kurzusok-lista">
+  </div>
+
+  <h2>Új kurzus létrehozása</h2>
+  <form id="uj-kurzus-forma">
+    <label for="nev">Név:</label>
+    <input type="text" id="nev" name="nev"><br><br>
+    <label for="leiras">Leírás:</label>
+    <textarea id="leiras" name="leiras"></textarea><br><br>
+    <button type="submit">Létrehozás</button>
+  </form>
+
+  <h2>Diákok</h2>
+  <div id="diakok-lista">
+  </div>
+
+  <h2>Diák hozzárendelése kurzushoz</h2>
+  <form id="hozzarendel-forma">
+    <label for="kurzus">Kurzus:</label>
+    <select id="kurzus" name="kurzus"></select><br><br>
+    <label for="diak">Diák:</label>
+    <select id="diak" name="diak"></select><br><br>
+    <button type="submit">Hozzárendelés</button>
+  </form>
+
+  <h2>Új diák létrehozása</h2>
+  <form id="uj-diak-forma">
+    <label for="nev">Név:</label>
+    <input type="text" id="nev" name="nev"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <button type="submit">Létrehozás</button>
+  </form>
+
+  <div id="adatModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modalCim"></h2>
+      <p id="modalAdatok"></p>
+      <form id="modalForm">
+        <input type="hidden" id="modalId">
+        <button type="submit">Mentés</button>
+      </form>
+    </div>
+  </div>
+  
+  <script src="async.js"></script>
+</body>
+</html>
